@@ -1,14 +1,20 @@
+body {
+    height: 100vh;
+    margin: 0;
+}
+
 .page {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .header {
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
-    padding: 20px 200px 400px 200px;
-    gap: 150px;
+    padding: 20px 200px 100px 200px;
+    gap: 100px;
     
 }
 
@@ -16,6 +22,7 @@
     font-size: 24px;
     color: #F9FAF8;
     font-weight: 700;
+    flex-shrink: 0;
 }
 
 ul {
@@ -54,6 +61,7 @@ a {
 
 .header-one {
     display: flex;
+    justify-content: space-between;
 }
 
 .header-list {
@@ -62,13 +70,13 @@ a {
 }
 
 .header-links {
-    margin-left: auto;
+    margin-left: 100px;
+    flex-shrink: 0;
 }
 
 .brownie {
     width: auto;
     height: 150px;
-    flex-grow: 1;
 }
 
 .header-two {
@@ -86,4 +94,112 @@ a {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+.part-one-total {
+    display: flex;
+    flex-direction: column;
+    background-color: #F9FAF8;
+    flex: 2;
+    padding: 100px 200px 100px 200px;
+    gap: 50px;
+    align-items: center;
+}
+
+.part-one-title {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 700;
+    align-self: center;
+}
+
+.pic-text {
+    font-size: 18px;
+}
+
+.weight-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    border: 5px solid #3882F6;
+}
+
+.part-one-pictures {
+    display: flex;
+    width: 100px;
+    display: flex;
+    gap: 25px;
+    margin-right: 350px;
+}
+
+.part-two {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 100px 200px 100px 200px;
+}
+
+.quote {
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+}
+
+.author {
+    font-weight: 600;
+    margin-left: auto;
+}
+
+.part-three {
+    background-color: #F9FAF8;
+    flex: 1 0;
+    padding: 100px 200px 100px 200px;
+
+}
+
+.cta {
+    background-color: #3882F6;
+    height: 100px;
+    width: 1000px;
+    display: flex;
+    flex-shrink: 0;
+    gap: 100px;
+    padding: 50px 100px 50px 100px;
+    border-radius: 15px;
+    justify-content: space-between;
+}
+
+.cta-bold {
+    color: #F9FAF8;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.cta-small {
+    color: #E5E7EB;
+    font-size: 15px;
+}
+
+.cta-button {
+    height: 1000;
+    border: 5px solid #F9FAF8;
+    border-radius: 15px;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 25px 75px 25px 75px;
+}
+
+.footer {
+    height: 100px;
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.footer-text {
+    color: #F9FAF8;
+    font-size: 18px;
 }
